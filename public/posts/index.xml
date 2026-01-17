@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Lucia&#39;s Corner</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Lucia&#39;s Corner</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇日记</title>
+      <link>/posts/first-diary/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/first-diary/</guid>
+      <description>&lt;p&gt;今天开始记录了。&lt;/p&gt;
+&lt;p&gt;感觉有点紧张，又有点开心。&lt;/p&gt;
+&lt;p&gt;以后会慢慢加照片和想法。&lt;/p&gt;
+&lt;p&gt;或许吧？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/posts/second-diary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/posts/second-diary/</guid>
+      <description>&lt;p&gt;![第一张照片](/images/IMG_20250713_144320.jpg)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

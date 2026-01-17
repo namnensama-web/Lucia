@@ -1,0 +1,9 @@
+lucia.help = "https://luci.help/"
+languageCode = "zh-cn"
+title = "Lucia's Corner"
+theme = "PaperMod"
+
+[params]
+  homeInfoParams = { Title = "欢迎", Content = "这里放日记、照片和一些碎碎念" }
+  ShowReadingTime = true
+  ShowShareButtons = true
