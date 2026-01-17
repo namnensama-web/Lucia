@@ -7,3 +7,10 @@ theme = "PaperMod"
   homeInfoParams = { Title = "欢迎", Content = "这里放日记、照片和一些碎碎念" }
   ShowReadingTime = true
   ShowShareButtons = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
