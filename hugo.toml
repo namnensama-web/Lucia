@@ -1,12 +1,15 @@
-lucia.help = "https://luci.help/"
+baseURL = "https://luci.help/"
 languageCode = "zh-cn"
 title = "Lucia's Corner"
 theme = "PaperMod"
 
 [params]
-  homeInfoParams = { Title = "欢迎", Content = "这里放日记、照片和一些碎碎念" }
+  homeInfoParams = { Title = "欢迎", Content = "这里放日记、照片和一些碎念" }
   ShowReadingTime = true
   ShowShareButtons = true
+  defaultTheme = "dark"  # 深色模式
+  googleFontsLink = "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+  
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -14,3 +17,10 @@ theme = "PaperMod"
       typographer = true
     [markup.goldmark.renderer]
       unsafe = true
+
+[build]
+  showDraft = true  # 强制显示草稿文章（测试用）
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
