@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lucia&#39;s Corner</title>
-    <link>https://luci.help/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Lucia&#39;s Corner</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://luci.help/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第四篇日记</title>
+      <link>http://localhost:1313/posts/2026-01-18-fourth-diary/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2026-01-18-fourth-diary/</guid>
+      <description>&lt;p&gt;现在是早上11点20分，经过一天的调试网站终于能上线了&lt;/p&gt;</description>
+    </item>
     <item>
       <title>第三篇日记</title>
-      <link>https://luci.help/posts/2026-01-18-third-diary/</link>
+      <link>http://localhost:1313/posts/2026-01-18-1/</link>
       <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://luci.help/posts/2026-01-18-third-diary/</guid>
+      <guid>http://localhost:1313/posts/2026-01-18-1/</guid>
       <description>&lt;p&gt;傻逼DNS，唉&lt;/p&gt;</description>
     </item>
     <item>
       <title>第二篇日记</title>
-      <link>https://luci.help/posts/2/</link>
+      <link>http://localhost:1313/posts/2/</link>
       <pubDate>Sat, 17 Jan 2026 18:00:00 +0800</pubDate>
-      <guid>https://luci.help/posts/2/</guid>
+      <guid>http://localhost:1313/posts/2/</guid>
       <description>&lt;p&gt;这是一篇测试文章。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;第一张照片&#34; loading=&#34;lazy&#34; src=&#34;https://luci.help/images/1.jpg&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;第一张照片&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/1.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>第一篇日记</title>
-      <link>https://luci.help/posts/1/</link>
+      <link>http://localhost:1313/posts/1/</link>
       <pubDate>Sat, 17 Jan 2026 10:00:00 +0800</pubDate>
-      <guid>https://luci.help/posts/1/</guid>
+      <guid>http://localhost:1313/posts/1/</guid>
       <description>&lt;p&gt;今天开始记录了。&lt;/p&gt;
 &lt;p&gt;感觉有点紧张，又有点开心。&lt;/p&gt;
 &lt;p&gt;以后会慢慢加照片和想法。&lt;/p&gt;

@@ -1,4 +1,4 @@
-baseURL = "https://luci.help/"
+baseURL = "https://lucia.help/"
 languageCode = "zh-cn"
 title = "Lucia's Corner"
 theme = "PaperMod"
@@ -9,7 +9,9 @@ theme = "PaperMod"
   ShowShareButtons = true
   defaultTheme = "dark"  # 深色模式
   googleFontsLink = "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-  
+  posts = [
+    {name = "posts", sortBy = "date", sortOrder = "desc"}
+  ]
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
