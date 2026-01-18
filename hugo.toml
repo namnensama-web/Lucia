@@ -1,7 +1,5 @@
 baseURL = "https://lucia.help/"
-# 网站图标配置 - 黑底白字L
 favicon = "favicon.ico"
-apple_touch_icon = "apple-touch-icon.png"
 languageCode = "zh-cn"
 title = "Lucia's Corner"
 theme = "PaperMod"
