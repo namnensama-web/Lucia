@@ -1,5 +1,7 @@
 baseURL = "https://lucia.help/"
-favicon = "favicon.ico"
+# PaperMod主题 网站图标配置 (强制生效，黑底白L)
+[params.assets]
+favicon = "/favicon.ico"
 languageCode = "zh-cn"
 title = "Lucia's Corner"
 theme = "PaperMod"
