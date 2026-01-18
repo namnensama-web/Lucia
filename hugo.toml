@@ -1,4 +1,4 @@
-baseURL = "https://luci.help/"
+baseURL = "https://lucia.help/"
 languageCode = "zh-cn"
 title = "Lucia's Corner"
 theme = "PaperMod"
