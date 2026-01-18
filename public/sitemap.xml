@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>http://localhost:61398/</loc><lastmod>2026-01-17T18:00:00+08:00</lastmod></url><url><loc>http://localhost:61398/posts/</loc><lastmod>2026-01-17T18:00:00+08:00</lastmod></url><url><loc>http://localhost:61398/posts/2/</loc><lastmod>2026-01-17T18:00:00+08:00</lastmod></url><url><loc>http://localhost:61398/posts/1/</loc><lastmod>2026-01-17T10:00:00+08:00</lastmod></url><url><loc>http://localhost:61398/categories/</loc></url><url><loc>http://localhost:61398/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://luci.help/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luci.help/posts/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luci.help/posts/2026-01-18-third-diary/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luci.help/posts/2/</loc>
+    <lastmod>2026-01-17T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://luci.help/posts/1/</loc>
+    <lastmod>2026-01-17T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://luci.help/categories/</loc>
+  </url><url>
+    <loc>https://luci.help/tags/</loc>
+  </url>
+</urlset>
