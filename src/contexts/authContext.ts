@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+// src/contexts/authContext.ts
+import { createContext, useState, useEffect } from "react";
 
 // 定义用户角色类型
 type UserRole = 'admin' | 'user';
@@ -25,54 +26,54 @@ export const AuthContext = createContext<AuthContextType>({
   setIsAuthenticated: () => {},
   login: () => false,
   logout: () => {},
-  isAdmin: () => false
+  isAdmin: () => false,
 });
 
 // 管理员验证码
 const ADMIN_CODE = "lucia7mn";
 
-// 创建一个自定义的AuthProvider组件，方便在实际应用中使用
+// 自定义 Hook，提供认证状态和方法
 export const useAuthProvider = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [user, setUser] = useState<User | undefined>(undefined);
 
-  // 初始化时从localStorage加载认证状态
-  useState(() => {
+  // 从 localStorage 加载初始认证状态（只在组件挂载时执行一次）
+  useEffect(() => {
     const savedAuth = localStorage.getItem("auth");
     if (savedAuth) {
       try {
         const authData = JSON.parse(savedAuth);
-        setIsAuthenticated(authData.isAuthenticated);
-        setUser(authData.user);
+        setIsAuthenticated(authData.isAuthenticated ?? false);
+        setUser(authData.user ?? undefined);
       } catch (error) {
-        console.error("Failed to load auth data:", error);
+        console.error("Failed to load auth data from localStorage:", error);
       }
     }
-  });
+  }, []); // 空依赖数组，只执行一次
 
   const login = (adminCode?: string): boolean => {
-    // 检查是否提供了管理员代码且代码正确
     const isAdminUser = adminCode === ADMIN_CODE;
-    
+
     setIsAuthenticated(true);
-    setUser({
+
+    const newUser: User = {
       id: isAdminUser ? "admin-123" : "user-123",
       name: isAdminUser ? "管理员" : "普通用户",
       email: isAdminUser ? "admin@example.com" : "user@example.com",
-      role: isAdminUser ? "admin" : "user"
-    });
-    
-    // 保存到localStorage
-    localStorage.setItem("auth", JSON.stringify({
-      isAuthenticated: true,
-      user: {
-        id: isAdminUser ? "admin-123" : "user-123",
-        name: isAdminUser ? "管理员" : "普通用户",
-        email: isAdminUser ? "admin@example.com" : "user@example.com",
-        role: isAdminUser ? "admin" : "user"
-      }
-    }));
-    
+      role: isAdminUser ? "admin" : "user",
+    };
+
+    setUser(newUser);
+
+    // 保存到 localStorage
+    localStorage.setItem(
+      "auth",
+      JSON.stringify({
+        isAuthenticated: true,
+        user: newUser,
+      })
+    );
+
     return isAdminUser;
   };
 
@@ -84,7 +85,7 @@ export const useAuthProvider = () => {
 
   // 判断是否为管理员
   const isAdmin = () => {
-    return user?.role === 'admin';
+    return user?.role === "admin";
   };
 
   return {
@@ -93,6 +94,6 @@ export const useAuthProvider = () => {
     login,
     logout,
     user,
-    isAdmin
+    isAdmin,
   };
 };
